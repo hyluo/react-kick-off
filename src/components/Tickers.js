@@ -50,6 +50,7 @@ class Tickers extends Component {
       .get('https://api.coinmarketcap.com/v1/ticker/?limit=10')
       .then(response => {
         var wanted = ['bitcoin', 'ethereum', 'litecoin'];
+        console.log('response:', response);
         var result = response.data.filter(currency =>
           wanted.includes(currency.id)
         );

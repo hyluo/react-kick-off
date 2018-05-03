@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 import Tickers from './components/Tickers.js';
@@ -16,5 +15,4 @@ class App extends Component {
     );
   }
 }
-
 export default App;
